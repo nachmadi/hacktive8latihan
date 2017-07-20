@@ -1,0 +1,49 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Phase 0 Week 2 tugas 1</title>
+<script type="text/javascript">
+	var tahunLahir = 1980;
+	var umurSekarang = 2017-tahunLahir;
+	var playerHealth = tahunLahir * Math.random();
+	var monsterHealth = tahunLahir * Math.random();
+	var kodeMonster = Math.floor(Math.pow(100, Math.random()));
+	var nama = "";
+	var peran = "";
+	if(peran==""){
+		nama = "kacung";
+	}
+	
+	for ( i=0; i< tahunLahir ; i++) {
+		if((i % umurSekarang)==0){
+			console.log(peran +' '+ nama+ ' Menyerang monster');
+			monsterHealth = monsterHealth-umurSekarang;
+		}else if((i % kodeMonster)==0){
+			console.log('monster menyerang' +peran +' '+ nama+ '!');
+			playerHealth = playerHealth-kodeMonster;
+		}else if((i % umurSekarang)==0){
+			console.log('peran' +' '+ nama+ ' Menyerang monster');
+			monsterHealth = monsterHealth-umurSekarang;
+		}else if ( ((i % kodeMonster)==0)&&((i % umurSekarang)==0) ) {
+			console.log('Health keduanya bertambah');
+			playerHealth = playerHealt+kodeMonster;
+			monsterHealth = monsterHealth+umurSekarang;
+		}
+		    
+		  
+    }
+	
+	if( playerHealth > monsterHealth){
+		console.log('Selamat, ' + peran + ' ' + nama + ' memenangkan pertarungan!');
+	}else{
+		console.log('Sayang sekali, ' + peran + ' ' + nama + ' dikalahkan monster...');
+	}
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

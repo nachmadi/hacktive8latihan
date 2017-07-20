@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Phase 0 Week 2 tugas 1</title>
+<script type="text/javascript">
+     /*  pengenalan variable */
+	var angkaBeda = "8"
+	console.log(angkaBeda == 8); // true
+	console.log(angkaBeda === 8); // false
+	console.log(angkaBeda === "8"); // true
+ 
+	/* kondisi if */
+	var tampung = 2;
+	if(tampung == 5) {
+	  console.log("angka yang ditampung adalah 5!");
+	}
+	else {
+	  if(tampung < 5) {
+	    console.log("angka yang ditampung bukan 5, tapi lebih kecil dari 5.");
+	  }
+	  else {
+	    console.log("angka yang ditampung bukan 5, tapi lebih besar dari 5.");
+	  }
+	}
+	
+	/* case */
+	var buttonPushed = 1;
+	switch(buttonPushed) {
+	  case 1:   { console.log('matikan TV!'); break; }
+	  case 2:   { console.log('turunkan volume TV!'); break; }
+	  case 3:   { console.log('tingkatkan volume TV!'); break; }
+	  case 4:   { console.log('matikan suara TV!'); break; }
+	  default:  { console.log('Tidak terjadi apa-apa'); }
+	}
+	
+	/* loop */
+	var flag = 1;
+	while(flag < 10) { 					  // Loop akan terus berjalan selama nilai flag masih dibawah 10
+	  console.log('Iterasi loop ke -' + flag);  // Menampilkan nilai flag pada iterasi tertentu
+	  flag++; 							  // Mengubah nilai flag dengan menambahkan 1
+	}
+	
+	/* for */
+	for(var angka = 1; angka < 10; angka++) {
+		  console.log('Iterasi for ke -' + angka);
+	}
+	
+	/* funcntion */
+	function tampilkan() {
+		 console.log("halo!");
+	}
+
+	tampilkan();
+	
+	/* function dengan return */
+	function munculkanAngkaDua() {
+		  return 2
+	}
+	var tampung = munculkanAngkaDua();
+	console.log(tampung)
+
+	/* function dengan input parameter ada result */
+	function tampilkanAngka(angkaPertama, angkaKedua) {
+	  return angkaPertama + angkaKedua
+	}
+	
+	console.log(tampilkanAngka(5,3))
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
